@@ -1,0 +1,10 @@
+---
+concurrency: 1
+base: 'https://api.xxx.local:port'
+iterations: 50
+rampup: 2
+
+plan:
+  - name: Fetch whatever
+    request:
+      url: /api/v1/whatever/link

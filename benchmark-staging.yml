@@ -1,0 +1,12 @@
+---
+concurrency: 4
+base: 'https://xxx.yyy.co'
+iterations: 100
+rampup: 2
+
+plan:
+  - name: Fetch whatever thing
+    request:
+      url: /api/v1/whatever
+      headers:
+        Authorization: 'Bearer whateverAuthorizationStuff'
